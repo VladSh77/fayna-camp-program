@@ -55,7 +55,7 @@
                             <page string="Description">
                                 <field name="description" />
                             </page>
-                            <page string="Incidents & Deviations">
+                            <page string="Incidents &amp; Deviations">
                                 <field name="incidents" />
                             </page>
                             <page string="Photos">
