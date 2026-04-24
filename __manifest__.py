@@ -25,6 +25,7 @@ TZ: fayna-digital-docs/contributing/CAMPSCOUT_MASTER_TZ.md §16 Phase 5
     "license": "LGPL-3",
     "depends": ["fayna_camp_template"],
     "data": [
+        "security/ir.model.access.csv",
         "data/ir_config_parameter.xml",
         "views/camp_program_views.xml",
     ],
