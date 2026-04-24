@@ -26,6 +26,7 @@ TZ: fayna-digital-docs/contributing/CAMPSCOUT_MASTER_TZ.md §16 Phase 5
     "depends": ["fayna_camp_template"],
     "data": [
         "data/ir_config_parameter.xml",
+        "views/camp_program_views.xml",
     ],
     "installable": True,
     "application": False,
