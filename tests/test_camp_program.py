@@ -1,4 +1,4 @@
-from datetime import date, timedelta
+from datetime import date
 
 from odoo.tests.common import TransactionCase
 
@@ -149,8 +149,6 @@ class TestCampProgram(TransactionCase):
                 "sequence": 20,
             }
         )
-        event_programs = self.env["camp.program"].search(
-            [("event_id", "=", self.event.id)]
-        )
+        event_programs = self.env["camp.program"].search([("event_id", "=", self.event.id)])
         self.assertIn(program1, event_programs)
         self.assertIn(program2, event_programs)

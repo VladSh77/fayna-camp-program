@@ -106,21 +106,21 @@ class CampProgram(models.Model):
     def action_schedule(self):
         """Move from draft to scheduled state"""
         for record in self:
-            if record.state != 'draft':
+            if record.state != "draft":
                 continue
-            record.write({'state': 'scheduled'})
+            record.write({"state": "scheduled"})
 
     def action_start(self):
         """Mark program as ongoing"""
         for record in self:
-            record.write({'state': 'ongoing'})
+            record.write({"state": "ongoing"})
 
     def action_complete(self):
         """Mark program as completed"""
         for record in self:
-            record.write({'state': 'completed'})
+            record.write({"state": "completed"})
 
     def action_cancel(self):
         """Cancel program"""
         for record in self:
-            record.write({'state': 'cancelled'})
+            record.write({"state": "cancelled"})
