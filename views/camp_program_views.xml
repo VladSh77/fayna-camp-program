@@ -101,7 +101,12 @@
             <field name="context">{}</field>
         </record>
 
-        <!-- Menu -->
+        <!-- Menu root (scaffold — top-level until real menu hierarchy is built) -->
+        <menuitem
+            id="camp_program_menu_root"
+            name="Camp Programs"
+            sequence="50"
+        />
         <menuitem
             id="camp_program_menu"
             name="Programs"
